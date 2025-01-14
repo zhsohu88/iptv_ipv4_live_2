@@ -72,7 +72,7 @@ def main():
         local_filenames_with_groups.append((local_filename, groups))
 
     # 步骤2：合并TXT文件并过滤
-    output_filename = "merged_output.txt"
+    output_filename = "live_ipv4.txt"
     max_channels_per_name = 10  # 设置每个频道名称最多保留的项数量
     merge_txt_files(local_filenames_with_groups, output_filename, max_channels_per_name)
 
