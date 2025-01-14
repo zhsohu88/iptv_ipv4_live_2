@@ -36,5 +36,5 @@ jobs:
         git config --global user.name "zhsohu88"
         git config --global user.email "zhsohu8869@gmail.com"
         git pull origin main  # 先拉取远程更改
-        git add merged_output.txt  # 确保添加生成的 txt 文件
+        git add live_ipv4.txt  # 确保添加生成的 txt 文件
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update filtered_playlist with available URLs" && git push)
