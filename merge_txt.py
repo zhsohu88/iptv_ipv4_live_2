@@ -57,7 +57,7 @@ def main():
         ("https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/ygbh.txt", None),  # 精简排序后的月光宝盒
         # 小苹果，蜗牛线路[测试2]
         ("http://wp.wadg.pro/down.php/d7b52d125998d00e2d2339bac6abd2b5.txt", ["央视频道①", "💞央视频道", "卫视频道①", "📡卫视频道","韩国频道"]),      
-        ("https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/dalian.txt", None),  # 保留所有分组  大连台
+        # ("https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/dalian.txt", None),  # 保留所有分组  大连台
         # 出处 小鹦鹉等多处获取 
         ("https://raw.githubusercontent.com/zhsohu88/iptv_ipv4_live/main/JJdoudizhu.txt", None),  # 保留所有分组  JJ斗地主
         # 出处 https://adultiptv.net/→http://adultiptv.net/chs.m3u
