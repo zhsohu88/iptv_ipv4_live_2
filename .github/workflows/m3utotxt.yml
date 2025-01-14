@@ -1,8 +1,9 @@
 name: M3U转TXT
-
+env:
+  TZ: Asia/Shanghai
 on:
   schedule:
-    - cron: '0 3 * * *'  # 每天北京时间上午11点运行
+    - cron: '0 3 * * *'  # 每天北京时间上午2点运行
   workflow_dispatch:  # 允许手动触发
 
 permissions:
