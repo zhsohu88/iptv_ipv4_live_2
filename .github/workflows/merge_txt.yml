@@ -1,0 +1,40 @@
+name: 下载并合并TXT文件
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # 每天北京时间上午11点运行
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  download-and-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 检出代码库
+      uses: actions/checkout@v2
+
+    - name: 设置Python环境
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: 安装requests库
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: 运行下载和合并脚本
+      run: python merge_txt.py
+
+    - name: 提交并推送更改
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --global user.name "zhsohu88"
+        git config --global user.email "zhsohu8869@gmail.com"
+        git pull origin main  # 先拉取远程更改
+        git add merged_output.txt  # 确保添加生成的 txt 文件
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update filtered_playlist with available URLs" && git push)

@@ -1,0 +1,37 @@
+name: M3U转TXT
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # 每天北京时间上午11点运行
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  m3utotxt:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 检出代码库
+      uses: actions/checkout@v3
+
+    - name: 设置Python环境
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+
+    - name: 安装requests库
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: 运行m3utotxt脚本
+      run: python m3utotxt.py
+
+    - name: 提交并推送更改
+      run: |
+        git config --global user.name "zhsohu88"
+        git config --global user.email "zhsohu8869@gmail.com"
+        git pull origin main  # 先拉取远程更改
+        git add *.txt  # 确保添加所有生成的 txt 文件
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update playlist with available URLs" && git push)
