@@ -35,6 +35,7 @@ jobs:
         git pull origin main  # 先拉取远程更改
         git add *.txt  # 确保添加所有生成的 txt 文件
         if ! git diff --staged --quiet; then  # 如果有未提交的更改
-          git commit -m "Update playlist with available URLs"  # 提交更改，提交信息为“Update playlist with available URLs”
+          # git commit -m "Update playlist with available URLs"  # 提交更改，提交信息为“Update playlist with available URLs”
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update playlist with available URLs" && git push)
           git push  # 推送更改
         fi
