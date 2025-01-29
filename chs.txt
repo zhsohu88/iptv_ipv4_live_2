@@ -1,6 +1,6 @@
 成人直播_9,#genre#
 Teen Girls,http://live.mycamtv.com/teen.m3u8
-MILF,http://live.mycamtv.com/milf.m3u8
+MILF1,http://live.mycamtv.com/milf.m3u8
 Young Girls,http://live.mycamtv.com/young.m3u8
 Mature,http://live.mycamtv.com/bigtits.m3u8
 Arab Girls,http://live.mycamtv.com/arab.m3u8
@@ -10,13 +10,13 @@ Brunette Girls,http://live.mycamtv.com/brunette.m3u8
 Latina Girls,http://live.mycamtv.com/latina.m3u8
 White Girls,http://live.mycamtv.com/white.m3u8
 Blonde Girls,http://live.mycamtv.com/blonde.m3u8
-Anal,http://live.mycamtv.com/anal.m3u8
+Anal1,http://live.mycamtv.com/anal.m3u8
 Big Ass Girls,http://live.mycamtv.com/bigass.m3u8
 Girls Squirt,http://live.mycamtv.com/squirt.m3u8
 Big Tits Girls,http://live.mycamtv.com/bigtits.m3u8
 Skinny Girls,http://live.mycamtv.com/skinny.m3u8
 Medium Girls,http://live.mycamtv.com/medium.m3u8
-Blowjob,http://live.mycamtv.com/blowjob.m3u8
+Blowjob1,http://live.mycamtv.com/blowjob.m3u8
 成人点播_9,#genre#
 Live Cams,http://cdn.adultiptv.net/livecams.m3u8
 MILF,http://cdn.adultiptv.net/milf.m3u8
